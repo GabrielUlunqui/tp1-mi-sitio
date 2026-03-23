@@ -16,12 +16,6 @@
 
 <body>
 
-<header> <h1>Hola Soy Gabriel Ulunqui</h1>
-    <p> Tengo 24 años, soy autodidacta y una persona muy adaptativa con rapido absorvimiento de conocimiento
-    </p>
-
-<p>BIENVENIDOS A MI PRIMERA PAGINA WEB.</p>
-
     <nav>
 <a href="#sobre-mi">Sobre Mi</a>
 
@@ -30,15 +24,17 @@
 <a href="#contacto">Contacto</a>
 
     </nav>
-
+<header> <h1>BIENVENIDOS</h1>
 <main>
-    <section id="sobre-mi">
+    <section id="sobre-mi" class="panel">
      <h2>Sobre Mi</h2>
-     <img src="fotos/perfil.png" alt="GABI Prime" alt=""width="450px" heigth="550px">
-     <a href="https://www.youtube.com/watch?v=Cjp6RVrOOW0&list=RDCjp6RVrOOW0&start_radio=1" target="_blank">youtube</a> ></a>"
-     <p> Soy estudiante de la carrera "Analisis de sistema y desarrollo de software"</p>
+     <div class="contenedor1">
+     <img src="fotos/perfil.png" alt="GABI Prime" class="perfil">
+     <p class="textosobremi">Hola!!!soy estudiante de "Analisis de Sistemas y desarrollo de Software", me encanta la idea de ser capaz de realizar programas o paginas web que ayuden o faciliten el trabajo. Quiero profesionalizarme en esto y ser reconocido en el ambito. </p>
+        
     </section>
-     <section id="Intereses">
+
+     <section id="intereses" class="panel">
      <h2> Intereses</h2>
      <ol> 
         <li ><h3>Juegos</h3></li>
@@ -48,18 +44,28 @@
         <li><h3>Pasatiempos</h3 ></li>
         <p> ver peliculas, jugar con mi hijo,  jugar en la compu</p>
      </ol>
-     <section id="Contacto">
-        <h2>ESCRIBIME</h2>
-         <img src="fotos/contacto.png" alt="LlAMAME" 
-         alt=""width="450px" heigth="550px">
-        <li ><h3>WhatsAPP</h3></li>
-        <p> 3874697984</p>
-        <li> <h3>Correo electronico</h3></li>
-        <p> gabrielulunqui@gmail.com</p>
-
      </section>
-     <h1>DEJAME TUS DATOS Y TE CONTACTO</h1>
-     <form action="#"method="POST">
+
+     <section id="contacto" class="panel">
+        <h2> Redes</h2>
+        <a href="https://discord.com/channels/@me" target="_blank">
+        <img src="fotos/discord.png" alt="Ir a discord" alt=""width="50px" height="50px"></a>
+
+        <a href="https://github.com/GabrielUlunqui" target="_blank">
+       <img src="fotos/github.png" alt="Ir a github"alt=""width="50px" height="50px"></a>
+
+       <a href="instagram.com/gabyulunqui" target="_blank">
+        <img src="fotos/instagram-circle.png" alt="Ir a instagram" alt=""width="50px" height="50px"></a>
+
+        <a href="mailto:gabrielulunqui@gmail.com" target="_blank">
+            <img src="fotos/google-circle.png" alt="Ir a gmail" alt=""width="50px" height="50px"></a>
+        
+        <a href="https://wa.me/5493874697984" target="_blank">
+            <img src="fotos/whatsapp-circle.png" alt="Ir a WhatsAPP" alt=""width="50px" height="50px"> </a>
+
+        <form>        
+        <h1>¿QUIERES QUE TE HABLE?</h1>
+         <form action="#"method="POST">
         <Label for="Nombre">Nombre Completo *</Label>
         <input type="text" id="Nombre" name="Nombre" required>
 
@@ -71,11 +77,10 @@
         <input type="number" id="celular" name="celular" required>
 
         <button type="submit">ENVIAR</button>
-        
-
-         </form>
+     </form>
+     </section>
      <footer>
-        <p>&copy; 2026 Gabriel Ulunqui </p></a>
+        <p>&copy; 2026 Gabriel Ulunqui. Derechos reservados </p></a>
      </footer>
     </main>
 </body>
