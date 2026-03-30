@@ -1,88 +1,90 @@
-/* Estilo general */
-*  {box-sizing: border-box;
+*{box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
+:root {
+    --verde-oscuro: #051F20;
+    --verde-profundo: #0B2B26;
+    --verde-medio: #163832;
+    --verde-suave: #235347;
+    --verde-claro: #8EB69B;
+    --cream: #DAF1DE;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    background: linear-gradient(to bottom, var(--cream), var(--verde-medio));
     margin: 0;
     padding: 0;
 }
 
-/* Título */
 h2 {
     text-align: center;
+    color: var(--verde-profundo);
     margin-top: 30px;
 }
 
-/* Formulario centrado */
+
 form {
     max-width: 400px;
     margin: 30px auto;
-    background: white;
+    background: var(--cream);
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Labels arriba de los inputs */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: var(--verde-profundo);
 }
 
-/* Inputs, select y textarea */
 input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border-radius: 8px;
-    border: 2px solid #ccc;
+    border-radius: 10px;
+    border: 2px solid var(--verde-claro);
     outline: none;
-    transition: all 0.3s ease;
+    transition: 0.3s;
+    background-color: white;
 }
 
-/* (c) FOCUS → azul */
 input:focus, select:focus, textarea:focus {
-    border-color: #3498db;
-    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+    border-color: var(--verde-suave);
+    box-shadow: 0 0 5px rgba(35,83,71,0.5);
 }
 
-/* (a) VALID → verde */
 input:valid, textarea:valid {
-    border-color: green;
-    background-color: #eafaf1;
+    border-color: var(--verde-suave);
+    background-color: #e8f5ec;
 }
 
-/* (b) INVALID → rojo (solo después de escribir) */
 input:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
-    border-color: red;
+    border-color: #c0392b;
     background-color: #fdecea;
 }
 
-/* Checkbox alineado */
 input[type="checkbox"] {
     width: auto;
     margin-right: 5px;
 }
 
-/* Botón */
 button {
     width: 100%;
     padding: 12px;
-    background: #3498db;
-    color: white;
+    background: var(--verde-profundo);
+    color: var(--cream);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* Hover botón */
 button:hover {
-    background: #2980b9;
+    background: var(--verde-oscuro);
 }
