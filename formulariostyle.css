@@ -1,0 +1,88 @@
+/* Estilo general */
+*  {box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Formulario centrado */
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Labels arriba de los inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs, select y textarea */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* (c) FOCUS → azul */
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+}
+
+/* (a) VALID → verde */
+input:valid, textarea:valid {
+    border-color: green;
+    background-color: #eafaf1;
+}
+
+/* (b) INVALID → rojo (solo después de escribir) */
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: red;
+    background-color: #fdecea;
+}
+
+/* Checkbox alineado */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botón */
+button:hover {
+    background: #2980b9;
+}
