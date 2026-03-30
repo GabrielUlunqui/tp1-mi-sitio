@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <h2>Formulario de Contacto</h2>
+
+    <form action="#" method="post">
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required minlength="3"><br><br>
+
+        <!-- Email -->
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"
+               pattern="[0-9]{10}"
+               placeholder="Ej: 3871234567"><br><br>
+
+        <!-- Motivo -->
+        <label for="motivo">Motivo de contacto:</label><br>
+        <select id="motivo" name="motivo">
+            <option value="consulta">Consulta</option>
+            <option value="soporte">Soporte</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <!-- Mensaje -->
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required minlength="10"></textarea><br><br>
+
+        <!-- Términos -->
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label><br><br>
+
+        <!-- Botón -->
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
