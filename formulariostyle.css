@@ -17,6 +17,23 @@ body {
     margin: 0;
     padding: 0;
 }
+nav {
+    background-color: var(--verde-oscuro);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--verde-claro);
+}
 
 h2 {
     text-align: center;

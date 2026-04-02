@@ -12,6 +12,29 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--cream), var(--verde-medio));
+    color: var(--texto);
+}
+
+nav {
+    background-color: var(--verde-oscuro);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--verde-claro);
+}
 section h2{
     text-align: center;
 }
