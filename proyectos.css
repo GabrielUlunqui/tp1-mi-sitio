@@ -18,7 +18,7 @@ padding: 0;
     gap: 20px;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: linear-gradient(to bottom, var(--fondo), var(--violeta-medio));
     color: var(--texto);
 }
@@ -60,6 +60,8 @@ header {
     padding: 30px;
     background: linear-gradient(135deg, var(--violeta-medio), var(--violeta-claro));
     color: white;
+        font-family: 'Poppins', sans-serif;
+
 }
 
 header h1 {
@@ -97,12 +99,16 @@ section h2{
     color: var(--violeta-oscuro);
     margin-bottom: 10px;
     font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+
 }
 
 .card-proyecto p {
     font-size: 14px;
     color: var(--violeta-medio);
     line-height: 1.4;
+        font-family: 'Poppins', sans-serif;
+
 }
 footer {
     text-align: center;

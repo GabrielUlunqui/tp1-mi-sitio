@@ -13,10 +13,11 @@ padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: linear-gradient(to bottom, var(--fondo), var(--violeta-medio));
     margin: 0;
     padding: 0;
+        
 }
 nav {
     background-color: var(--violeta-oscuro);
@@ -39,6 +40,7 @@ h2 {
     text-align: center;
     color: var(--violeta-oscuro);
     margin-top: 30px;
+    
 }
 
 
