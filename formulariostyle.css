@@ -3,28 +3,29 @@ margin: 0;
 padding: 0;
 }
 :root {
-    --verde-oscuro: #051F20;
-    --verde-profundo: #0B2B26;
-    --verde-medio: #163832;
-    --verde-suave: #235347;
-    --verde-claro: #8EB69B;
-    --cream: #DAF1DE;
+  --violeta-oscuro: #240046;
+    --violeta-medio: #5a189a;
+    --violeta-claro: #9d4edd;
+    --acento: #c77dff;
+    --fondo: #f8f7ff;
+    --panel: #ffffff;
+    --texto: #1a1a2e;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, var(--cream), var(--verde-medio));
+    background: linear-gradient(to bottom, var(--fondo), var(--violeta-medio));
     margin: 0;
     padding: 0;
 }
 nav {
-    background-color: var(--verde-oscuro);
+    background-color: var(--violeta-oscuro);
     padding: 15px;
     text-align: center;
 }
 
 nav a {
-    color: var(--cream);
+    color: var(--fondo);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -32,11 +33,11 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--verde-claro);
+    color: var(--violeta-claro);
 }
 h2 {
     text-align: center;
-    color: var(--verde-profundo);
+    color: var(--violeta-oscuro);
     margin-top: 30px;
 }
 
@@ -44,7 +45,7 @@ h2 {
 form {
     max-width: 400px;
     margin: 30px auto;
-    background: var(--cream);
+    background: var(--fondo);
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -54,7 +55,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: var(--verde-profundo);
+    color: var(--violeta-oscuro);
 }
 
 input, select, textarea {
@@ -62,19 +63,19 @@ input, select, textarea {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 10px;
-    border: 2px solid var(--verde-claro);
+    border: 2px solid var(--violeta-claro);
     outline: none;
     transition: 0.3s;
     background-color: white;
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: var(--verde-suave);
+    border-color: var(--acento);
     box-shadow: 0 0 5px rgba(35,83,71,0.5);
 }
 
 input:valid, textarea:valid {
-    border-color: var(--verde-suave);
+    border-color: var(--acento);
     background-color: #e8f5ec;
 }
 
@@ -92,8 +93,8 @@ input[type="checkbox"] {
 button {
     width: 100%;
     padding: 12px;
-    background: var(--verde-profundo);
-    color: var(--cream);
+    background: var(--violeta-oscuro);
+    color: var(--fondo);
     border: none;
     border-radius: 10px;
     font-size: 16px;
@@ -102,5 +103,5 @@ button {
 }
 
 button:hover {
-    background: var(--verde-oscuro);
+    background: var(--violeta-oscuro);
 }
