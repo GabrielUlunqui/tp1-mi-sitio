@@ -35,41 +35,48 @@ main {
     flex: 1;
 }
 
-nav {
-    background-color: var(--violeta-oscuro);
-    padding: 15px;
-    text-align: center;
+header {
+    background: linear-gradient(135deg, var(--violeta-medio), var(--violeta-claro));  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+}
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
+nav {
+    background-color: var(--violeta-oscuro);
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+
 nav a {
-     color: var(--acento);
+    color: var(--acento);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
     transition: 0.3s;
-     padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;   
+    
 }
 
 nav a:hover {
     background-color: var(--violeta-claro);
-        color: white;
-}
-header {
-    text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, var(--violeta-medio), var(--violeta-claro));
     color: white;
-        font-family: 'Poppins', sans-serif;
-
-}
-
-header h1 {
-    color: var(--violeta-oscuro);
 }
 
 section h2{
     text-align: center;
+    font-size: 1.8rem;
 }
 .card-proyecto {
     background: var(--panel);
@@ -98,16 +105,17 @@ section h2{
 .card-proyecto h3 {
     color: var(--violeta-oscuro);
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 1.3rem;
         font-family: 'Poppins', sans-serif;
 
 }
 
 .card-proyecto p {
-    font-size: 14px;
+    font-size: 1.3rem;
     color: var(--violeta-medio);
     line-height: 1.4;
         font-family: 'Poppins', sans-serif;
+
 
 }
 footer {
