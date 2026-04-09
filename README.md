@@ -9,3 +9,32 @@
 ## RUTA DE INSTALACION 
     En mi caso, git esta instalado en la direccion c/User/Gabriel/mingw64/bin/git
     
+## 🚀 Mi Página Web
+
+Con lo aprendido en clases y con ayuda de nuestro profesor, fui capaz de desarrollar mi primera página web.
+
+En este proyecto utilicé tecnologías como:
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Responsive Design
+
+A medida que continúe aprendiendo, el sitio se irá actualizando para mejorar su diseño y funcionalidad.
+
+---
+
+## 📱 Vista en diferentes dispositivos
+
+### 💻 Escritorio
+![Vista escritorio](fotos/compu.png)
+
+### 📲 Tablet
+![Vista tablet](fotos/tablet.png)
+
+### 📱 Celular
+![Vista celular](fotos/celu.png)
+
+# 🌐 Portfolio Web - Gabriel Ulunqui
+
+🔗 [Ver sitio en vivo](https://gabrielulunqui.github.io/tp1-mi-sitio/)
