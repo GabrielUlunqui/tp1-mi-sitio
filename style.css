@@ -21,13 +21,15 @@ body {
 }
 .layout{
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-        "header header"
-        "sidebar main"
-        "footer footer";
+        " header "
+        " main"
+        " footer";
     min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    
+
 }
 header{grid-area: header; }
 .sidebar{grid-area: sidebar; }
@@ -36,10 +38,10 @@ footer{grid-area: footer; }
 .sidebar{ 
     padding: 2rem 1rem;
     border-radius: 15px;
-  
+    display: none;
     background: var(--acento);
 }
-.ssidebar h3{
+.sidebar h3{
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -69,6 +71,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
 .logo {
@@ -80,8 +84,13 @@ header {
 nav {
     background-color: var(--violeta-oscuro);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+
     padding: 15px;
-    gap: 20px;
+    gap: 10px;
     border-radius: 15px;
 }
 
@@ -116,10 +125,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: white;
+    gap: 10px;
 }
 .hero-titulo{
-    font-size: 1. 2rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.80);
     margin: 0;
 }
@@ -190,7 +199,7 @@ ul li {
     background: var(--panel);
     border-radius: 50%;
     padding: 8px;
-    border: 2px solid 
+    border: 2px solid var(--acento);
 }
 
 #Redes a:hover {
@@ -203,4 +212,34 @@ footer {
     background: var(--violeta-oscuro);
     color: var(--acento);
     margin-top: 30px;
+}
+/* TABLET */
+@media (min-width: 768px){
+    .layout{
+        grid-template-areas: 
+            "header header"
+            "sidebar main"
+            "footer footer";
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .sidebar{
+        display: block;
+    }
+}
+
+/* LAPTOP */
+@media (min-width: 1024px){
+    .layout{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1440px){
+    .layout{
+        max-width: 1800px;
+    }
 }

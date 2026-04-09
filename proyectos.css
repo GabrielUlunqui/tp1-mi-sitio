@@ -133,3 +133,39 @@ footer {
     color: var(--acento);
     margin-top: auto;
 }
+@media (min-width: 768px){
+        .layout {
+            grid-template-columns: 220px 1fr;
+            grid-template-areas:
+            "header header"
+            "sidebar sidebar"
+            "footer footer";
+            .sidebar {
+                display:block;
+            }
+            header{
+                    flex-wrap: wrap;
+                    height: auto;
+                    padding: 1rem 2rem;
+                }
+        }
+        .sidebar {
+            display: block;
+        }
+        header {
+            flex-direction: row;
+            height: 64px;
+            padding: 0 2rem;
+        }
+    }
+    @media (min-width: 1024px){
+        .layout{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: 1440px){
+        .layout {
+            max-width: 1600px;
+        }
+    }
