@@ -19,6 +19,50 @@ body {
     font-size: 1rem;
     line-height: 1.6; 
 }
+.layout{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    min-height: 100vh;
+}
+header{grid-area: header; }
+.sidebar{grid-area: sidebar; }
+main{grid-area: main; }
+footer{grid-area: footer; }
+.sidebar{ 
+    padding: 2rem 1rem;
+    border-radius: 15px;
+  
+    background: var(--acento);
+}
+.ssidebar h3{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--acento);
+
+}
+.sidebar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: auto;
+    margin: 0;
+}
+.sidebar ul li a {
+    color: var(--fondo);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+.sidebar ul li a:hover{
+    color: var(--violeta-oscuro);
+}
 header {
     background: linear-gradient(135deg, var(--violeta-medio), var(--violeta-claro));  
     display: flex;
@@ -56,6 +100,28 @@ nav a {
 nav a:hover {
     background-color: var(--violeta-claro);
     color: white;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: linear-gradient(135deg, var(--violeta-medio), var(--violeta-oscuro));
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+.hero-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: white;
+}
+.hero-titulo{
+    font-size: 1. 2rem;
+    color: rgba(255, 255, 255, 0.80);
+    margin: 0;
 }
 
 
@@ -111,19 +177,20 @@ ul li {
 
 #Redes {
     text-align: center;
+    background-color:var(--violeta-medio);
 }
 
 #Redes a {
     display: inline-block;
     margin: 10px;
-    transition: 0.3s;
+
 }
 
 #Redes img {
     background: var(--panel);
     border-radius: 50%;
     padding: 8px;
-    border: 2px solid var(--acento);
+    border: 2px solid 
 }
 
 #Redes a:hover {
