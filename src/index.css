@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0d0a26;
+  --color-night: #15113a;
+  --color-card: #1e1850;
+  --color-card-2: #2a2268;
+  --color-line: #352c7a;
+  --color-muted: #a5a1cf;
+  --color-accent: #22d3ee;
+  --color-accent-2: #6366f1;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-ink text-slate-100 font-sans antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 85% -10%, rgb(99 102 241 / 0.25), transparent 60%),
+    radial-gradient(50rem 35rem at -10% 30%, rgb(34 211 238 / 0.10), transparent 60%),
+    radial-gradient(60rem 40rem at 110% 70%, rgb(139 92 246 / 0.15), transparent 60%);
+  background-attachment: fixed;
+}
+
+::selection {
+  @apply bg-accent text-ink;
+}
+
+@utility text-gradient {
+  @apply bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent;
+}
+
+@utility card {
+  @apply rounded-2xl border border-line/70 bg-card/70 backdrop-blur-sm;
+}
+
+@utility btn {
+  @apply inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+
+@utility btn-primary {
+  @apply bg-gradient-to-r from-accent to-accent-2 text-ink shadow-lg shadow-accent/20 hover:shadow-accent/40 hover:-translate-y-0.5;
+}
+
+@utility btn-ghost {
+  @apply border border-line text-slate-100 hover:border-accent hover:text-accent;
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-marquee { animation: none; }
+}
