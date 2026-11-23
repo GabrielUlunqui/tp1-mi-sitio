@@ -1,3 +1,14 @@
+import { MotionConfig } from 'motion/react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+
 export default function App() {
-  return <main />
+  return (
+    <MotionConfig reducedMotion="user">
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </MotionConfig>
+  )
 }
